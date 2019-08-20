@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 <div class="jumbotron-fluid rounded-0 text-white mt-5" style="background-image: url('<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>'); background-size: cover;">
-<div class="py-5" style="background-color: rgba(0, 0, 0, 0.75); height: 75vh;">
+<div class="py-5" style="background-color: rgba(0, 0, 0, 0.75);">
     <div class="container">
     <div class="row">
         <div class="col-md-6">
