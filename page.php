@@ -27,9 +27,9 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
         <div class="col-md-8 my-auto">
             <h1 class="display-4">Welcome, Dev Team!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p class="lead">Enter the path of the WordPress Master</p>
             <hr class="my-4 bg-white">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>IMore text.</p>
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
             </p>
