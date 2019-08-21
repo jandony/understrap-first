@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" class="rounded" alt="...">
         </div>
         <div class="col-md-8 my-auto">
-            <h1 class="display-4">Welcome, User!</h1>
+            <h1 class="display-4">Welcome, Dev Team!</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4 bg-white">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
