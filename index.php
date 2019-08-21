@@ -20,13 +20,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="jumbotron-fluid rounded-0 text-white mt-5" style="background-image: url('<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>'); background-size: cover;">
-<div class="py-5" style="background-color: rgba(0, 0, 0, 0.75);">
-    <div class="container">
-    <div class="row">
+<div style="background-color: rgba(0, 0, 0, 0.75); height: 75vh;">
+    <div class="container d-flex h-100">
+    <div class="row my-auto">
         <div class="col-md-6">
             <img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" class="rounded" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-auto">
         <hr class="my-4 bg-white">
             <h1 class="display-4">Our Blog</h1>
         <hr class="my-4 bg-white">

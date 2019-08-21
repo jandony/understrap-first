@@ -19,16 +19,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="jumbotron-fluid rounded-0 text-white mt-5" style="background-image: url('<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>'); background-size: cover;">
-<div class="py-5" style="background-color: rgba(0, 0, 0, 0.75); height: 75vh;">
-    <div class="container">
-    <div class="row">
+<div style="background-color: rgba(0, 0, 0, 0.75); height: 75vh;">
+    <div class="container d-flex h-100">
+    <div class="row my-auto">
         <div class="col-md-4">
             <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" class="rounded" alt="...">
         </div>
-        <div class="col-md-8 pt-5">
+        <div class="col-md-8 my-auto">
             <h1 class="display-4">Welcome, User!</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
+            <hr class="my-4 bg-white">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
