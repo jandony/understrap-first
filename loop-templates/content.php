@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 
-<article <?php post_class('card p-3 mb-3 shadow'); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('card p-4 mb-3 shadow'); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
@@ -29,11 +29,13 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php endif; ?>
 
+		<hr>
+
 	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-	<div class="entry-content">
+	<div class="entry-content pt-3">
 
 		<?php the_excerpt(); ?>
 

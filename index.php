@@ -23,13 +23,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div style="background-color: rgba(0, 0, 0, 0.75); height: 75vh;">
     <div class="container d-flex h-100">
     <div class="row my-auto">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12">
             <img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'full' ); ?>" class="rounded" alt="...">
         </div>
-        <div class="col-md-6 my-auto">
+        <div class="col-lg-6 col-md-12 my-auto">
         <hr class="my-4 bg-white">
             <h1 class="display-4">Our Blog</h1>
+			<p>Most recent post: <?php the_title(); ?></p>
         <hr class="my-4 bg-white">
+			<!-- <p>Most recent post: <?php the_title(); ?></p> -->
+			<!-- <h2><?php the_title(); ?></h2> -->
+			<p><?php the_excerpt(); ?></p>
         </div>
     </div>
     </div>
