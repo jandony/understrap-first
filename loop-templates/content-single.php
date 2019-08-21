@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class('card p-3 mb-3 shadow'); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('p-3 mb-3'); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
@@ -23,11 +23,15 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<hr>
+
+	<?php echo get_the_post_thumbnail( $post->ID); ?>
 
 	<div class="entry-content">
 
-		<?php the_content(); ?>
+		<div class="py-4 px-3"><?php the_content(); ?></div>
+
+		<hr>
 
 		<?php
 		wp_link_pages(

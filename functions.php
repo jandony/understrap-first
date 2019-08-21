@@ -33,3 +33,37 @@ foreach ( $understrap_includes as $file ) {
 	}
 	require_once $filepath;
 }
+
+function format_comment($comment, $args, $depth) {
+
+	$GLOBALS['comment'] = $comment; ?>
+       
+	   <li <?php comment_class('card p-3 mb-2 shadow'); ?> id="li-comment-<?php comment_ID() ?>">
+			
+		   <div class="row pb-3">
+			<div class="col-1">
+				<?php echo get_avatar( get_the_author_meta( 'ID' ), $default, $alt, $args ); ?>
+			</div>		   
+			<div class="col-11 comment-intro">
+				<em>commented on</em> 
+				<a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s'), get_comment_date(), get_comment_time()) ?></a>
+				<em>by</em>
+				<em><?php echo get_author_name() ?></em>		
+				<hr>
+			</div>
+		   </div>
+
+			<?php if ($comment->comment_approved == '0') : ?>
+			<em><?php _e('Your comment is awaiting moderation.') ?></em><br />
+			<?php endif; ?>
+			
+			<?php comment_text(); ?>
+		   
+		   <hr>
+		   
+		   <div class="reply">
+			   <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+		   </div>
+
+
+<?php } 
